@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### My notes
+
+What is Virtual DOM ?
+
+DOM manipulation is slow and not efficient because the web browser has to check whether the change will require the page to be redrawn. JQuery made manipulation easier however the main concern of how and when the DOM changes will happen was not addressed until React was introduced with Virtual DOM. By taking away this process from the programmers, React can optimally decide on the changes required for the DOM. 
+
+
