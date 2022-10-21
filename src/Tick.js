@@ -4,7 +4,7 @@ class Tick extends React.Component {
     render() {
         return (
             <div>
-                <h2> It is {new Date().toLocaleTimeString()}.</h2>
+                <p>It is {new Date().toLocaleTimeString()}</p>
             </div>
         );
     }
