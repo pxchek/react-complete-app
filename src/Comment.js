@@ -3,6 +3,8 @@ import UserInfo from "./UserInfo";
 import Tick from "./Tick";
 import NameForm from "./Nameform";
 import Person from "./Person";
+import Foo from "./Foo";
+import Counter from "./Counter";
 
 class Comment extends Component {
     render() {
@@ -29,6 +31,8 @@ class Comment extends Component {
                         name={"Lewis Hamilton"}
                         hobbies={['Sports', 'Tech', 'Swimming']}/>
                 </div>
+                <Foo/>
+                <Counter/>
             </div>
         );
     }
