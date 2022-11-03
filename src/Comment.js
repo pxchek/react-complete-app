@@ -5,6 +5,7 @@ import NameForm from "./Nameform";
 import Person from "./Person";
 import Foo from "./Foo";
 import Counter from "./Counter";
+import Rest from "./Rest";
 
 class Comment extends Component {
     render() {
@@ -33,6 +34,7 @@ class Comment extends Component {
                 </div>
                 <Foo/>
                 <Counter/>
+                <Rest/>
             </div>
         );
     }
