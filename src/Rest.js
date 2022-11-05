@@ -4,8 +4,8 @@ class Rest extends Component {
     constructor(props) {
         super(props);
         this.repos = null;
-        this.status = false;
-
+        this.getRepos = this.getRepos.bind(this);
+        this.logRepos = this.logRepos.bind(this);
     }
 
     getRepos() {
