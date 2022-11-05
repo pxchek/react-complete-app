@@ -6,11 +6,13 @@ import Person from "./Person";
 import Foo from "./Foo";
 import Counter from "./Counter";
 import Rest from "./Rest";
+import NewFeed from "./NewFeed";
 
 class Comment extends Component {
     render() {
         return (
             <div>
+                <NewFeed/>
                 <p>Submit Form</p>
                 <NameForm/>
                 <div className="Comment">
