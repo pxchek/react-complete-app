@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import "../../public/SignUp.css";
+import "../SignUp.css";
 
 function SignUp(props) {
     const [firstName, setFirstName] = useState('Panindra');
@@ -24,12 +24,15 @@ function SignUp(props) {
                 <label className="label-style">Enter your First Name:
                     <input value={firstName} onChange={handleFirstNameChange} type="text"/>
                 </label>
-                <label>Enter your Last Name:
+                <br/>
+                <label className="label-style">Enter your Last Name:
                     <input value={lastName} onChange={handleLastNameChange} type="text"/>
                 </label>
-                <label>Enter your email address:
+                <br/>
+                <label className="label-style">Enter your email address:
                     <input value={emailAddress} onChange={handleEmailAddressChange} type="text"/>
                 </label>
+                <br/>
             </form>
             <p>Your full name : {firstName} {lastName}</p>
             <p>Your email address: {emailAddress}</p>
