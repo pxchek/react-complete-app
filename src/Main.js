@@ -7,7 +7,7 @@ export const Main = () => {
     return (
         <div>
             <Header/>
-            <img src="./img.png" align="center"  alt={}/>
+            <img src="./img.png" align="center"/>
             <div className="main" align="center">
                 <h1>REGISTRATION FORM</h1>
                 <SignUp/>
