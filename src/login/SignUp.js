@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import "../SignUp.css";
-import Rest from "../Rest";
+import {Rest} from "../Rest";
 
-export const SignUp = (props) => {
+export const SignUp = () => {
     const [firstName, setFirstName] = useState('Panindra');
     const [lastName, setLastName] = useState('Chekoori');
     const [emailAddress, setEmailAddress] = useState('panindra.chekoori@email.com');
@@ -37,7 +37,6 @@ export const SignUp = (props) => {
             </form>
             <p>Your full name : {firstName} {lastName}</p>
             <p>Your email address: {emailAddress}</p>
-            <p>REGISTRATION IS {props.status}</p>
             <Rest firstName={firstName} lastName={lastName}/>
         </>
     );

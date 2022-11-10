@@ -6,7 +6,7 @@ class Comment extends Component {
         return (
             <div className="main" align="center">
                 <h1>REGISTRATION FORM</h1>
-                <SignUp status="SUCCESSFUL"/>
+                <SignUp/>
             </div>
         );
     }
