@@ -5,11 +5,6 @@ import {Rest} from "../Rest";
 export const SignUp = () => {
     const [firstName, setFirstName] = useState('Panindra');
     const [lastName, setLastName] = useState('Chekoori');
-    const [emailAddress, setEmailAddress] = useState('panindra.chekoori@email.com');
-
-    const handleEmailAddressChange = (event) => {
-        setEmailAddress(event.target.value);
-    }
 
     const handleFirstNameChange = (event) => {
         setFirstName(event.target.value);
@@ -30,13 +25,8 @@ export const SignUp = () => {
                     <input value={lastName} onChange={handleLastNameChange} type="text"/>
                 </label>
                 <br/>
-                <label className="label-style">Enter your email address:
-                    <input value={emailAddress} onChange={handleEmailAddressChange} type="text"/>
-                </label>
-                <br/>
             </form>
             <p>Your full name : {firstName} {lastName}</p>
-            <p>Your email address: {emailAddress}</p>
             <Rest firstName={firstName} lastName={lastName}/>
         </>
     );
