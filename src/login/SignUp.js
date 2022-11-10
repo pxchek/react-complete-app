@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import "../SignUp.css";
 
-function SignUp(props) {
+export const SignUp = (props) => {
     const [firstName, setFirstName] = useState('Panindra');
     const [lastName, setLastName] = useState('Chekoori');
     const [emailAddress, setEmailAddress] = useState('panindra.chekoori@email.com');
@@ -39,6 +39,4 @@ function SignUp(props) {
             <p>REGISTRATION IS {props.status}</p>
         </>
     );
-}
-
-export default SignUp;
+};

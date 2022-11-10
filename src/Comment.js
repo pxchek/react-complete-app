@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SignUp from "./login/SignUp";
+import {SignUp} from "./login/SignUp";
 
 class Comment extends Component {
     render() {
