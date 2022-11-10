@@ -6,6 +6,8 @@ class Rest extends Component {
         this.repos = null;
         this.getRepos = this.getRepos.bind(this);
         this.logRepos = this.logRepos.bind(this);
+        this.firstName = this.props.firstName;
+        this.lastName = this.props.lastName;
     }
 
     getRepos() {
@@ -27,12 +29,11 @@ class Rest extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.getRepos}>
-                    {this.status ? "Fetched" : "Fetch Repos"}
-                </button>
                 <button onClick={this.logRepos}>
                     Log Repos
                 </button>
+                <p>{this.props.firstName}</p>
+                <p>{this.props.lastName}</p>
             </div>
         )
     }

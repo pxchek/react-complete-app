@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import "../SignUp.css";
+import Rest from "../Rest";
 
 export const SignUp = (props) => {
     const [firstName, setFirstName] = useState('Panindra');
@@ -37,6 +38,7 @@ export const SignUp = (props) => {
             <p>Your full name : {firstName} {lastName}</p>
             <p>Your email address: {emailAddress}</p>
             <p>REGISTRATION IS {props.status}</p>
+            <Rest firstName={firstName} lastName={lastName}/>
         </>
     );
 };
