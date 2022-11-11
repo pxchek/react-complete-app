@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import "./SignUp.css";
-import {Rest} from "../Rest";
+import {Authenticate} from "../Authenticate";
 
 export const SignUp = () => {
     const [firstName, setFirstName] = useState('Panindra');
@@ -27,7 +27,7 @@ export const SignUp = () => {
                 <br/>
             </form>
             <p>Your full name : {firstName} {lastName}</p>
-            <Rest firstName={firstName} lastName={lastName}/>
+            <Authenticate firstName={firstName} lastName={lastName}/>
         </>
     );
 };

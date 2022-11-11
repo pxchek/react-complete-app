@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export const Rest = (props) => {
+export const Authenticate = (props) => {
     let [status, setStatus] = useState('Registration is Pending');
     const firstName = props.firstName;
     const lastName = props.lastName;
