@@ -7,27 +7,26 @@ import {Cart} from "./Cart";
 
 export const App = () => {
     return (
-        <div>
-            <Header/>
-            <img src="./img.png" align="center"/>
-            <div className="main" align="center">
-                <h1>REGISTRATION FORM</h1>
-                <SignUp/>
-            </div>
-            <Footer/>
-            <BrowserRouter>
+        <BrowserRouter>
+            <div>
+                <Header/>
+                <img src="./img.png" align="center"/>
+                <div className="main" align="center">
+                    <h1>REGISTRATION FORM</h1>
+                    <SignUp/>
+                </div>
+                <Footer/>
                 <ul>
                     <li>
                         <Link to="/cart">Cart</Link>
                     </li>
                 </ul>
-
                 <Switch>
                     <Route path="/cart">
                         <Cart/>
                     </Route>
                 </Switch>
-            </BrowserRouter>
-        </div>
+            </div>
+        </BrowserRouter>
     );
 };
