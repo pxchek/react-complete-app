@@ -1,15 +1,33 @@
 import React from "react";
-import Tick from "./Tick.js";
+import {SignUp} from "./login/SignUp";
+import {Header} from "./header/Header";
+import {Footer} from "./footer/Footer";
+import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
+import {Cart} from "./Cart";
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Hello, {this.props.name}</h1>
-                <Tick/>
+export const App = () => {
+    return (
+        <div>
+            <Header/>
+            <img src="./img.png" align="center"/>
+            <div className="main" align="center">
+                <h1>REGISTRATION FORM</h1>
+                <SignUp/>
             </div>
-        );
-    }
-}
+            <Footer/>
+            <BrowserRouter>
+                <ul>
+                    <li>
+                        <Link to="/cart">Cart</Link>
+                    </li>
+                </ul>
 
-export default App;
+                <Switch>
+                    <Route path="/cart">
+                        <Cart/>
+                    </Route>
+                </Switch>
+            </BrowserRouter>
+        </div>
+    );
+};
