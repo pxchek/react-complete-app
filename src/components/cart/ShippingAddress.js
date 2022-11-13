@@ -16,25 +16,20 @@ export const ShippingAddress = () => {
     useEffect(() => {
         if (zipcode) {
             const loadAddressData = async () => {
-                await fetch(`${API_URL}${zipcode}?key=${API_KEY}`);
-            }
-
-            loadAddressData().then(data => {
+                const response = await fetch(`${API_URL}${zipcode}?key=${API_KEY}`);
+                const data = await response.json();
                 setCity(data.City);
                 setState(data.State);
-            });
+            }
+
+            loadAddressData();
         }
     }, [zipcode]);
 
     return (
         <form onSubmit={updateZip}>
             Zipcode: <input type="text" name="zipcode"/>
-            <br/>
-            <br/>
-            <br/>
             <button type="submit">Lookup City/State</button>
-            <br/>
-            <br/>
             City: {city}<br/>
             State:{state}<br/>
         </form>
