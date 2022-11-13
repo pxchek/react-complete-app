@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import "./SignUp.css";
 import {Authenticate} from "./Authenticate";
+import PropTypes from "prop-types";
 
 export const SignUp = () => {
     const [firstName, setFirstName] = useState('Panindra');
@@ -31,3 +32,8 @@ export const SignUp = () => {
         </>
     );
 };
+
+SignUp.propTypes = {
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired
+}
