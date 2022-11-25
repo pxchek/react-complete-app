@@ -17,7 +17,7 @@ export const ShippingAddress = () => {
         if (zipcode) {
             const loadAddressData = async () => {
                 const response = await fetch(`${API_URL}${zipcode}?key=${API_KEY}`);
-                const data = await response.json();
+                const data = response.json();
                 setCity(data.City);
                 setState(data.State);
             }
